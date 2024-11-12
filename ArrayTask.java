@@ -1,0 +1,49 @@
+/*class ArrayTask {
+    public static void main(String[] args) {
+        System.out.println("Array Task");
+        String array[] ={"Laptop","Mouse","CPU","Cable","Keyboard"};
+        System.out.println("Address of Array == "+array);
+        System.out.println("Array Elements ");
+         System.out.println("Array length == "+array.length);
+        System.out.println("1st element= " +array[0]);
+        System.out.println("2nd element= " +array[1]);
+        System.out.println("3rd element= " +array[2]);
+        System.out.println("4th element= " +array[3]);
+        System.out.println("5th element= " +array[4]);
+        
+    }
+}
+
+*/
+
+
+
+/*
+class ArrayTask {
+    public static void main(String[] args) {
+        System.out.println("Array Task");
+        String array[] ={"Laptop","Mouse","CPU","Cable","Keyboard"};
+        System.out.println("Address of Array == "+array);
+        System.out.println("Array Elements in order");
+
+        for(int i=0;i<array.length;i++){
+	
+	System.out.println(" Element = "+i +" is ="+array[i]);
+	
+	if(array[i]=="CPU"){
+		System.out.println("CPU is present");
+		}
+	} 
+	
+
+	System.out.println("Reverse order of array");
+	for(int i=array.length-1;i>=0;i--){
+	System.out.println(" Element = "+i +" is ="+array[i]);
+	} 	    
+    }
+}
+
+*/
+
+
+
