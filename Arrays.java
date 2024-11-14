@@ -1,3 +1,7 @@
+// Create 2 arrays in each way for all datatypes 
+// Each array should have 10 values atleast
+// reassign values 
+// printall the values from array
 class Arrays{
 	public static void main(String args[]){
 		byte[] noOfPensInBox={12,10,20,19,18,13,16,18,10,8};

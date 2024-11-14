@@ -18,32 +18,46 @@
 
 
 
-/*
+
 class ArrayTask {
     public static void main(String[] args) {
-        System.out.println("Array Task");
-        String array[] ={"Laptop","Mouse","CPU","Cable","Keyboard"};
-        System.out.println("Address of Array == "+array);
-        System.out.println("Array Elements in order");
+    System.out.println("Array Task");
+    String array[] ={"Laptop","Mouse","CPU","Cable","Keyboard"};
+        
+    System.out.println("Array Elements in order");
 
-        for(int i=0;i<array.length;i++){
-	
+    for(int i=0;i<array.length;i++){
 	System.out.println(" Element = "+i +" is ="+array[i]);
-	
-	if(array[i]=="CPU"){
-		System.out.println("CPU is present");
-		}
-	} 
-	
+	}
 
 	System.out.println("Reverse order of array");
 	for(int i=array.length-1;i>=0;i--){
 	System.out.println(" Element = "+i +" is ="+array[i]);
-	} 	    
+	} 
+
+    System.out.println("first to middle of array");
+    for(int i=0;i<=array.length/2;i++){
+    System.out.println(" Element = "+i +" is ="+array[i]);
+    }
+
+    System.out.println("Middle to last of array");
+    for(int i=array.length/2;i<=array.length-1;i++){
+    System.out.println(" Element = "+i +" is ="+array[i]);
+    }
+
+    System.out.println("Skipping first index of array");
+    for(int i=1;i<array.length;i++){
+    System.out.println(" Element = "+i +" is ="+array[i]);
+    }
+
+    System.out.println("last to middle of array");
+    for(int i=array.length-1;i>=array.length/2;i--){
+    System.out.println(" Element = "+i +" is ="+array[i]);
+    }
+
     }
 }
 
-*/
 
 
 
