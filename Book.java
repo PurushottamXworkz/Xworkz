@@ -21,8 +21,11 @@ class Book{
 	System.out.println(bookName);
 	System.out.println(bookName);
 
-
-
+	bookName="Malegalalli madhumagalu";
+	System.out.println("After reassignning value of book");
+	System.out.println("----------------------------------");
+	System.out.println(bookName);
+	System.out.println("----------------------------------");
 	String bookName1="The Alchemist";
 	String author1="Paulo Coelho";
 	String ownBy1="Paulo Coelho";
