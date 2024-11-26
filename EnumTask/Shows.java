@@ -1,0 +1,3 @@
+enum Shows{
+	MORNING,MATNIEE,NIGHT;
+}
