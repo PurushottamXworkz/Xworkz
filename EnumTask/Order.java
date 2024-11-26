@@ -1,0 +1,3 @@
+enum Order{
+	ONLINE,CALL,IN_PERSON;
+}
