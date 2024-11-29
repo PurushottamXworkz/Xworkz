@@ -1,0 +1,3 @@
+ enum PassengerId{
+	ADHAR,PAN,VOTER,DRIVING,SENIOUR_CARD;
+}

@@ -1,4 +1,4 @@
-class World {
+class World{
     String country;
     int noOfStates;
     String capital;

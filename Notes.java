@@ -1,5 +1,6 @@
 class Notes{
 	public static void main(String args[]){
+		
 	String subject="Self Help";
 	String topics="Reshape";
 	String colorUsed="Yellow";

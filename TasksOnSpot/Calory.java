@@ -1,0 +1,3 @@
+enum Calory{
+		HUNDRED_POUND,TWO_HUNDRED_POUND;
+}
