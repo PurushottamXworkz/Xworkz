@@ -7,6 +7,8 @@ class InfosysRunner{
 		System.out.println("HackWithInfy Founder of Organisation : "+hack.nameOfFounder);
 		System.out.println("HackWithInfy services : "+hack.services());
 		System.out.println("HackWithInfy Maintainance : "+hack.maintainace());
+		System.out.println("HackWithInfy HR Department : "+hack.hrDept());
+		System.out.println("HackWithInfy Consultation : "+hack.consultation());
 
 		System.out.println("-----------------------------------------");
 		InfosysSpringBoard infy=new InfosysSpringBoard();
@@ -14,6 +16,8 @@ class InfosysRunner{
 		System.out.println("Author : "+infy.author); 
 		System.out.println("Instructors : "+infy.Instructors()); 
 		System.out.println("Sponsership : "+infy.sponsership()); 
+		System.out.println("InfosysSpringBoard services : "+infy.services());
+		System.out.println("InfosysSpringBoard Maintainance : "+infy.maintainace());
 		System.out.println("-----------------------------------------");
 	}
 }
