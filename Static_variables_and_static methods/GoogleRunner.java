@@ -3,7 +3,6 @@ class GoogleRunner{
 		Google.services();
 		Google.products();
 		System.out.println("----------------------------------------------");
-
 		System.out.println("Name Of Organization : "+Google.nameOfOrganization);
 		System.out.println("----------------------------------------------");
 		System.out.println("Browser Name : "+Google.browserName);
