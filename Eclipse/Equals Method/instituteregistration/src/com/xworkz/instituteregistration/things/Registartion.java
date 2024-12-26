@@ -188,16 +188,16 @@ public class Registartion {
 		}
 		@Override
 		public String toString() {
-			return "Details of Registration \n" + " [firstName=" + firstName + "\n"
-					+ " lastName=" + lastName + "\n" 
-					+ "category=" + category +"\n"
-					+ "country=" + country +"\n"
-					+ "state=" + state +"\n"
-					+"district=" + district +"\n"
-					+ "street=" + street 
+			return "Details of Registration \n" + " [\n firstName=" + firstName 
+					+ "\n lastName=" + lastName  
+					+ "\n category=" + category 
+					+ "\n country=" + country 
+					+ "\n state=" + state 
+					+"\n district=" + district
+					+ "\n street=" + street 
 					+ "\n guardian=" + guardian 
-					+ "\n placeOfBirth=" + placeOfBirth + 
-					"\n password=" + password
+					+ "\n placeOfBirth=" + placeOfBirth 
+					+ "\n password=" + password
 					+ "\n transactionID=" + transactionID 
 					+ "\n quota=" + quota 
 					+ "\n payment=" + payment
@@ -275,10 +275,5 @@ public class Registartion {
 			return true;
 			
 		}
-		
-		
-		
-		
-		
 		
 }

@@ -104,6 +104,10 @@ public class RegistrationRunner {
 		System.out.println("-----------------------------------------------------");
 		System.out.println(registartion3.toString());
 		System.out.println("-----------------------------------------------------");
+		System.out.println(registartion4.toString());
+		System.out.println("-----------------------------------------------------");
+		System.out.println(registartion5.toString());
+		System.out.println("-----------------------------------------------------");
 		System.out.println("Object is equal=="+registartion.equals(registration1));
 		System.out.println("-----------------------------------------------------");
 		System.out.println("Object is equal=="+registartion.equals(registartion3));

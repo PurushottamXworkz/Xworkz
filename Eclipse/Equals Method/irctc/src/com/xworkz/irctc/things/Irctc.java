@@ -3,7 +3,7 @@ package com.xworkz.irctc.things;
 public class Irctc {
 		private String userName;
 		private int loginId;
-		
+		int otp=145;
 		public Irctc() {
 			System.out.println("This is default constructor");
 		}
@@ -43,6 +43,23 @@ public class Irctc {
 					
 					
 			return true;
+		}
+		
+		@Override
+		public int hashCode() {
+			System.out.println("Invoking hashCode");
+			int code=5;
+			int hashResult=1;
+			hashResult=code*hashResult+otp;
+			System.out.println("Hashresult= "+hashResult);
+			if(this.userName==null) {
+				hashResult=code*hashResult+otp;
+				System.out.println(hashResult);
+			}else {
+				hashResult=code*hashResult+this.userName.hashCode();
+				System.out.println(hashResult);
+			}
+			return hashResult;
 		}
 		
 		
