@@ -12,3 +12,10 @@ bill float
 );
 
 desc television;
+
+rename table television to tv;
+drop table tv;
+
+alter table television add column distributor_id int;
+
+alter table television drop column distributor_id;

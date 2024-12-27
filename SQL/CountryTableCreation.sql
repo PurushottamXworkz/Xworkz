@@ -12,3 +12,6 @@ citizen_dob date
 );
 
 desc citizen;
+
+rename table citizen to people;
+ drop table people; 

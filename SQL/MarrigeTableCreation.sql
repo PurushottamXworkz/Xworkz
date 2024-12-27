@@ -13,3 +13,10 @@ total_bill float
 );
 
 desc catering;
+
+rename table catering to cooking;
+
+alter table cooking add column no_of_varieties int;
+desc cooking;
+
+alter table cooking drop column no_of_varieties;
