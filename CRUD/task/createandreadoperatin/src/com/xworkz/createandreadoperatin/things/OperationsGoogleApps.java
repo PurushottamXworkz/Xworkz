@@ -9,8 +9,10 @@ public class OperationsGoogleApps {
 			if(index < appsDetails.length) {
 				appsDetails[index]=apps;
 				index++;
+				System.out.println("Data Saved successfully");
 				return "Data Saved successfully";
 			}else {
+				System.out.println("Array is full");
 				return "Data is not saved";
 			}
 		}

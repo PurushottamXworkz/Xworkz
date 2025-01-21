@@ -12,6 +12,9 @@ order_number int,
 total_bill float
 );
 
+alter table catering modify dish_id int;
+
+alter table catering rename column total_bill to bill;
 desc catering;
 
 rename table catering to cooking;

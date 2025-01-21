@@ -12,7 +12,7 @@ public class ElectronicRunner {
 		details.setNoOfItems(12);
 		
 		ElectronicsDetails details2=new ElectronicsDetails();
-		details2.setBrandName("Samsung");
+		details2.setBrandName("Samsang");
 		details2.setDistributionName("Gokul Electronics");
 		details2.setNameOfElectronic("Lamps");
 		details2.setNoOfItems(50);
@@ -22,7 +22,21 @@ public class ElectronicRunner {
 		electronics.saveDetails(details);
 		electronics.saveDetails(details2);
 		electronics.readDetails();
+//		electronics.deleteDetails(1);
+		electronics.readDetails();
+//		electronics.deleteDetails(12);
+		electronics.readDetails();
 		
+		ElectronicsDetails updatedDetails=new ElectronicsDetails();
+		updatedDetails.setBrandName("Dell");
+		updatedDetails.setDistributionName("Ravi Electronics");
+		updatedDetails.setNameOfElectronic("Smart phone");
+		updatedDetails.setNoOfItems(12);
+		
+		electronics.updateByNoOfItems(updatedDetails);
+		electronics.readDetails();
+		System.out.println("=====================================================");
+		electronics.searchByBrandName("Dell");
 		
 		
 		
