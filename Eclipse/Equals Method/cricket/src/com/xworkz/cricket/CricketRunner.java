@@ -33,7 +33,6 @@ public class CricketRunner {
 	 cricket3.setNameOfBoard("BCCI");
 	 
 	 
-	 
 	 System.out.println("--------------------------------------------");
 	 Cricket cricket4=new Cricket();
 	 cricket4.setJerseyNumber(10);
@@ -44,7 +43,6 @@ public class CricketRunner {
 	 cricket4.setCallBy("King");
 	 cricket4.setStateFrom("Haryana");
 	 cricket4.setNameOfBoard("BCCI");
-	 
 	 
 	 System.out.println(cricket.toString());
 	 System.out.println("--------------------------------------------");
