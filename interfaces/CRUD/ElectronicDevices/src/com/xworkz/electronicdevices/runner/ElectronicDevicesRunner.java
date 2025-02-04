@@ -1,0 +1,27 @@
+package com.xworkz.electronicdevices.runner;
+
+import com.xworkz.electronicdevices.constant.BrandOfProduct;
+import com.xworkz.electronicdevices.constant.ElectronicDevices;
+import com.xworkz.electronicdevices.constant.ProductType;
+import com.xworkz.electronicdevices.dto.ElectronicDevicesDto;
+import com.xworkz.electronicdevices.service.ElectronicService;
+import com.xworkz.electronicdevices.service.ElectronicServiceImplementation;
+
+public class ElectronicDevicesRunner {
+	public static void main(String[] args) {
+		ElectronicDevicesDto dto=new ElectronicDevicesDto();
+		dto.setBrandOfProduct(BrandOfProduct.DELL.toString());
+		dto.setElectronicDevices(ElectronicDevices.WASHING_MACHINE.toString());
+		dto.setProctNumber("Wash-Machine123");
+		dto.setProductName("Washing Machine");
+		dto.setProductType(ProductType.ORIGINAL.toString());
+		dto.setWarrantyProduct("Yes");
+		
+		ElectronicService service=new ElectronicServiceImplementation();
+		if(service.onSave(dto)) {
+			System.out.println("Validation is succesfull");
+		}else {
+			System.out.println("Validation is not succesfull");
+		}
+	}
+}
