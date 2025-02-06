@@ -1,9 +1,14 @@
 package com.xworkz.bookstore.service;
 
 import com.xworkz.bookstore.dto.BookStoreDto;
+import com.xworkz.bookstore.repository.BookStoreRepository;
+import com.xworkz.bookstore.repository.BookStoreRepositoryImplemtation;
 import com.xworkz.bookstore.util.BookStoreUtils;
 
 public class BookStoreImplementation implements BookStoreService{
+
+	private BookStoreRepository repository=new BookStoreRepositoryImplemtation();
+	
 
 	@Override
 	public boolean onSave(BookStoreDto dto) {
@@ -16,8 +21,37 @@ public class BookStoreImplementation implements BookStoreService{
 					&& BookStoreUtils.validate(dto.getTopAuthors())
 					&& BookStoreUtils.validate(dto.getTypeOfLibrary())
 					){
-					return true;	
+					System.out.println("Validation is done");
+					if(!this.duplicateCheck(dto)) {
+						if(this.repository.onSave(dto)) {
+							System.out.println("Saved Successfully");
+							return true;
+						}else {
+							System.out.println("Not Saved");
+							return true;
+						}
+					}else {
+						System.out.println("Duplicate Dto");
 					}
+					}
+		}
+		return false;
+	}
+
+	@Override
+	public BookStoreDto[] readData() {
+		return this.repository.readData();
+	}
+
+	@Override
+	public boolean duplicateCheck(BookStoreDto dto) {
+		BookStoreDto[] listOfBooks= this.repository.readData(); 
+		if(listOfBooks!=null) {
+			for(BookStoreDto d:listOfBooks) {
+				if (d!=null && d.equals(dto)) {
+					return true;
+				}
+			}
 		}
 		return false;
 	}

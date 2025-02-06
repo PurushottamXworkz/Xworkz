@@ -22,6 +22,12 @@ public class BookStoreRunner {
 			System.out.println("Validation is successfull");
 		}else {
 			System.out.println("Validation is not succesfull");
-		}		
+		}
+		
+		System.out.println("Read Data");
+		BookStoreDto[] dtos=service.readData();
+		for(BookStoreDto d:dtos) {
+			System.out.println(d);
+		}
 	}
 }

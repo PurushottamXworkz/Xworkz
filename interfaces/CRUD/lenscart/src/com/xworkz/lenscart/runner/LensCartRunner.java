@@ -25,5 +25,11 @@ public class LensCartRunner {
 		}else {
 			System.out.println("Validation is not successfull");
 		}
+		
+		System.out.println("Read Data");
+		LensCartdto[] dtos=service.readData();
+		for(LensCartdto d:dtos) {
+			System.out.println(d);
+		}
 	}
 }
