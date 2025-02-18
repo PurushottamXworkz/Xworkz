@@ -55,4 +55,16 @@ public class BookStoreImplementation implements BookStoreService{
 		}
 		return false;
 	}
+
+	@Override
+	public boolean update(BookStoreDto dto) {
+		
+		return this.repository.update(dto);
+	}
+
+	@Override
+	public boolean delete(String value) {
+		
+		return this.repository.delete(value);
+	}
 }

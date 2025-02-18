@@ -29,5 +29,26 @@ public class BookStoreRunner {
 		for(BookStoreDto d:dtos) {
 			System.out.println(d);
 		}
+		
+		BookStoreDto dto1=new BookStoreDto();
+		dto1.setAddress("Dharwad");
+		dto1.setBookTypes(BookType.FICTION.toString());
+		dto1.setNameOfBook("John");
+		dto1.setNameOfPublication("Thomas");
+		dto1.setTopAuthors(TopAuthors.JOHN_RONALD.toString());
+		dto1.setTypeOfLibrary(TypeOfLibrary.CENTRAL_LIBRARY.toString());
+		service.update(dto1);
+		
+		BookStoreDto[] dtos2=service.readData();
+		for(BookStoreDto d:dtos2) {
+			System.out.println(d);
+		}
+		
+		service.delete("Pride and Prejudice");
+		System.out.println("Read Data");
+		BookStoreDto[] dtos1=service.readData();
+		for(BookStoreDto d:dtos1) {
+			System.out.println(d);
+		}
 	}
 }

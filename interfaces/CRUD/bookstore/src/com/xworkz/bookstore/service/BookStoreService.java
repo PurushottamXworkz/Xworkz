@@ -6,4 +6,6 @@ public interface BookStoreService {
 	boolean onSave(BookStoreDto dto);
 	BookStoreDto[] readData();
 	boolean duplicateCheck(BookStoreDto dto);
+	boolean update(BookStoreDto dto);
+	boolean delete(String value);
 }
