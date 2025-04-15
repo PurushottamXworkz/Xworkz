@@ -24,5 +24,4 @@ public class ParkingSystemServlet extends HttpServlet{
 		
 		rd.forward(req, resp);
 	}
-	
 }
