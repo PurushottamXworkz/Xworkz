@@ -17,7 +17,7 @@ public class RailwayBookingController {
     @PostMapping("saveData")
     public String getData(String userName, String email, String password, String phoneNumber, Model model){
         System.out.println(" Name : " + userName +" Email :"+email+" Password :"+password+" Phone Number :"+phoneNumber);
-        model.addAttribute("Name",userName);
+        model.addAttribute("userName",userName);
         model.addAttribute("email",email);
         model.addAttribute("password",password);
         model.addAttribute("phoneNumber",phoneNumber);

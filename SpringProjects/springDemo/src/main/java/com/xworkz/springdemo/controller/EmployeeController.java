@@ -20,7 +20,6 @@ public class EmployeeController {
         model.addAttribute("name",userName);
         model.addAttribute("email",email);
         model.addAttribute("phoneNumber",phoneNumber);
-
         return "success.jsp";
     }
 }
