@@ -10,10 +10,10 @@ public class DeleteRunner {
        EntityManager em = emf.createEntityManager();
         EntityTransaction et=em.getTransaction();
         try{
+            et.begin();
             CricketEntity cr=em.find(CricketEntity.class,2);
             if(cr!=null){
                 System.out.println("Data is deleted");
-                et.begin();
                 em.remove(cr);
                 et.commit();
             }else{

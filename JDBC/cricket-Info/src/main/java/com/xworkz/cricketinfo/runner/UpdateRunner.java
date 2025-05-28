@@ -26,7 +26,5 @@ public class UpdateRunner {
         }finally {
             emf.close();
         }
-
-
     }
 }
