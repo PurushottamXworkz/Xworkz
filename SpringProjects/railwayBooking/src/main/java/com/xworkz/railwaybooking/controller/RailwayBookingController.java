@@ -19,10 +19,6 @@ public class RailwayBookingController {
         return "register";
     }
 
-//    @GetMapping("redirectToRegister")
-//    public String getPassengerInfo(){
-//        return "passengerInfo.jsp";
-//    }
 
     @PostMapping("saveData")
     public String getData(RailwayBookingDto dto, Model model){
